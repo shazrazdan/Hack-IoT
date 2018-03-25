@@ -1,0 +1,61 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "hack i o t",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetEspInfoIntent",
+                    "slots": [
+                        {
+                            "name": "Sensor",
+                            "type": "Sensor"
+                        }
+                    ],
+                    "samples": [
+                        " {Sensor} right now",
+                        " the {Sensor} right now"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Sensor",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "humidity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pressure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "temperature"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "everything"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
